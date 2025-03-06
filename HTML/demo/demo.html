@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Form Demo</h1>
+            <form action="/test_from">
+                <p>
+                    <label for="username">Enter a username:</label>
+                    <input type="text" placeholder="username" id="username" name="username">
+                </p>
+
+                <p>
+                    <label for="password">Enter your password:</label>
+                    <input type="password" placeholder="password" id="password" name="password">
+                </p>
+
+                <p>
+                    <label for="color">Enter your coler</label>
+                    <input type="color" name="coler">
+                </p>
+
+                <p>
+                    <label for="number">Enter a number:</label>
+                    <input type="number" placeholder="enter a number" name="number">
+                </p>
+                <hr>
+                <button>Sub</button>
+            </form>
+            <h2>YouTube search</h2>
+            <form action="https://www.youtube.com/results">
+                <input type="text" name="search_query">
+                <button>YouTube</button>
+            </form>
+            <h2>Google search</h2>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <button>Google</button>
+            </form>
+
+            <h2>Checkbox-agree</h2>
+
+            <form action="/check">
+                <input type="checkbox" id="checkbox" name="agree">
+                <label for="checkbox">I agree to all!</label>
+
+                <p>
+                    <input type="radio" id="size1" name="size" value="xs" />
+                    <label for="size1">XS</label>
+
+                    <input type="radio" id="size2" name="size" value="s" />
+                    <label for="size2">S</label>
+
+                    <input type="radio" id="size3" name="size" value="m" />
+                    <label for="size3">M</label>
+                </p>
+                <label for="choice">Please choice:</label>
+                <select name="choice">
+                    <option value="" selected>--enter choice--</option>
+                    <option value="first">First Value</option>
+                    <option value="second">Second Value</option>
+                    <option value="third">Third Value</option>
+                </select>
+                <br>
+                <label for="name">Name (4 to 8 characters):</label>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+                <p>
+                    <label for="requests">Enter your requests:</label>
+                    <textarea name="requests" id="requests" rows="5 " cols="20" name="Requests?"
+                        placeholder="My requests is...."></textarea>
+                </p>
+                <p>
+                    <button>Sub</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
